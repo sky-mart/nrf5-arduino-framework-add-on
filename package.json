@@ -1,0 +1,7 @@
+{
+  "description": "Adafruit Arduino Framework for NRF52 Add-On",
+  "name": "framework-arduinoadafruitnrf52-addon",
+  "system": "*",
+  "url": "https://gitlab.nsoric.com/mtf/mcu/nrf52/nrf5-arduino-framework-add-on",
+  "version": "0.21.1"
+}
