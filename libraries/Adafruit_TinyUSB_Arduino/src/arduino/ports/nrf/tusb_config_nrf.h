@@ -83,10 +83,6 @@ extern "C" {
 #define CFG_TUD_VENDOR_TX_BUFSIZE 64
 #endif
 
-// Enable TYPEC stack
-#define CFG_TUC_ENABLED   1
-#define TUP_TYPEC_RHPORTS_NUM 1
-
 #ifdef __cplusplus
 }
 #endif

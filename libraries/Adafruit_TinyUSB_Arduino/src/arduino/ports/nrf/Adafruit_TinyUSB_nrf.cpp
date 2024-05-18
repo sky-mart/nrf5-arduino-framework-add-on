@@ -23,7 +23,6 @@
  */
 
 #include "tusb_option.h"
-#include "typec/usbc.h"
 
 #if defined ARDUINO_NRF52_ADAFRUIT && CFG_TUD_ENABLED
 
@@ -70,14 +69,12 @@ static void usb_device_task(void *param) {
   NVIC_SetPriority(USBD_IRQn, 2);
 
   tusb_init();
-  tuc_init(0, TUSB_TYPEC_PORT_SNK);
 
   usb_hardware_init();
 
   // RTOS forever loop
   while (1) {
     tud_task();
-    tuc_task();
   }
 }
 
